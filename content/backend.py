@@ -1,8 +1,120 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 from IPython.display import clear_output
-import pandas as pd
-import numpy as np
+
+
+# onde radio challenge
+
+INDICE_RADIO = "SUIVEZ LE CHEMIN DE L'ANCIENNE ÉPAVE, OÙ REPOSENT LES OSSEMENTS DES MARINS"
+
+def decode_onde():
+    # clear_output(wait=True)
+    freq_input = input("Entrez la fréquence de l'onde: ")
+    if freq_input == "5":
+        print("Fréquence valide! Vous décodez l'onde radio et trouvez l'indice suivant:")
+        print(INDICE_RADIO)
+    else:
+        print("Fréquence invalide! Veuillez exécuter la cellule (ctrl-enter) pour tenter à nouveau.")
 
 # decoupage challenge
+
 chaine = "2be6d5c4-23b3"
 code = chaine[:5] + chaine[-2:]
 
@@ -17,33 +129,9 @@ def decode_decoupage():
     else:
         print("Code invalide! Veuillez exécuter la cellule (ctrl-enter) pour tenter à nouveau.")
 
-# onde radio challenge
-INDICE_RADIO = "SUIVEZ LE CHEMIN DE L'ANCIENNE ÉPAVE, OÙ REPOSENT LES OSSEMENTS DES MARINS"
-
-def decode_onde():
-    clear_output(wait=True)
-    freq_input = input("Entrez la fréquence de l'onde: ")
-    if freq_input == "5":
-        print("Fréquence valide! Vous décodez l'onde radio et trouvez l'indice suivant:")
-        print(INDICE_RADIO)
-    else:
-        print("Fréquence invalide! Veuillez exécuter la cellule (ctrl-enter) pour tenter à nouveau.")
-
-# iteration challenge
-
-def gen_objet():
-    for i in "INSECTES NUTRITIFS SE CACHENT SOUS LES ROCHES":
-        yield i
-
 # tableau challenge
-df = pd.DataFrame(np.array([[i for i in "57u2A6mXeK"],
-                            [i for i in "MCKDFn76NZ"],
-                            [i for i in "3aY9bN4h4P"],
-                            [i for i in "2JKD3mQ872"],
-                            [i for i in "u5p7VGGpY2"],
-                            [i for i in "MgvW7w6Sq8"]]))
 
-INDICE_STELE = "SILEX ENTERRÉ À 1m SOUS LA STÈLE"
+INDICE_STELE = 'TROUVEZ LA CARTE PERDUE DU ROI DES PIRATES, CACHÉE DANS UNE GROTTE AQUATIQUE'
 
 def decode_stele():
     clear_output(wait=True)
@@ -53,6 +141,12 @@ def decode_stele():
         print(INDICE_STELE)
     else:
         print("Code invalide! Veuillez exécuter la cellule (ctrl-enter) pour tenter à nouveau.")
+
+# iteration challenge
+
+def gen_objet():
+    for i in 'UTILISEZ LA CARTE POUR LOCALISER LE NAVIRE COULÉ':
+        yield i
 
 # pascal challenge
 
@@ -71,7 +165,7 @@ def pascal_triangle(n):
         triangle.append(ligne_courante)
         return triangle
 
-INDICE_PASCAL = "BANANIERS SE CACHENT AU SUD DE L'ILE"
+INDICE_PASCAL = 'BRAVEZ LES ALGUES QUI SE TORDENT, ET VOUS TROUVEREZ LE COFFRE REMPLI DE RICHESSES'
 
 def decode_pascal():
     clear_output(wait=True)
@@ -81,6 +175,3 @@ def decode_pascal():
         print(INDICE_PASCAL)
     else:
         print("Code invalide! Veuillez exécuter la cellule (ctrl-enter) pour tenter à nouveau.")
-
-if __name__ == '__main__':
-    pass
