@@ -6,7 +6,7 @@ import numpy as np
 chaine = "2be6d5c4-23b3"
 code = chaine[:5] + chaine[-2:]
 
-INDICE_DECOUPAGE = "NOURRITURE DANS GROTTE SOUS CHUTE"
+INDICE_DECOUPAGE = "NAGEZ DANS LE LABYRINTHE DE CORAIL, MAIS MÉFIEZ-VOUS DES CRÉATURES DANGEREUSES QUI S'Y CACHENT"
 
 def decode_decoupage():
     clear_output(wait=True)
@@ -18,7 +18,7 @@ def decode_decoupage():
         print("Code invalide! Veuillez exécuter la cellule (ctrl-enter) pour tenter à nouveau.")
 
 # onde radio challenge
-INDICE_RADIO = "BAIES ROUGES DE L'ILE SONT COMESTIBLES"
+INDICE_RADIO = "SUIVEZ LE CHEMIN DE L'ANCIENNE ÉPAVE, OÙ REPOSENT LES OSSEMENTS DES MARINS"
 
 def decode_onde():
     clear_output(wait=True)
