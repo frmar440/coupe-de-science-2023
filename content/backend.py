@@ -104,10 +104,8 @@ from IPython.display import clear_output
 
 INDICE_RADIO = "SUIVEZ LE CHEMIN DE L'ANCIENNE ÉPAVE, OÙ REPOSENT LES OSSEMENTS DES MARINS"
 
-def decode_onde():
-    clear_output(wait=True)
-    freq_input = input("Entrez la fréquence de l'onde: ")
-    if freq_input == "5":
+def decode_onde(ans):
+    if ans == "5":
         print("Fréquence valide! Vous décodez l'onde radio et trouvez l'indice suivant:")
         print(INDICE_RADIO)
     else:
